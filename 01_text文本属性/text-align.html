@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #f00;
+            color: white;
+            /* text-align */
+            text-align: center;
+
+        }
+
+        .content {
+            background-color: #0f0;
+            height: 100px;
+            width: 100px;
+            /* 方式一：改为行内元素 */
+            /* display: inline-block; */
+            /* 使用auto */
+            margin: 0 auto;
+
+        }
+
+        .justifybox {
+            background-color: pink;
+            width: 200px;
+            text-align: justify;
+            text-align-last: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>text-align负责的是行内级元素相对块级父元素的对齐方式</h2>
+    <div>1.文本居中</div>
+    <div class="box">1.文本居中</div>
+
+    <div>2.图片居中</div>
+    <div class="box">
+        <img src="../assets/images/favicon.ico" alt="favicon">
+    </div>
+
+    <div>3.块级元素居中可以将块级元素改为行内元素</div>
+    <div class="box">
+        <div class="content">我是一个块级元素修改的行内元素</div>
+    </div>
+    <div>4.两端对齐justify,一般用不到,如果要两端对齐现在一般使用flex布局了,这个属性对最后一行是不生效的,如果要设置最后一行生效:有单独的属性:text-align-last:justify</div>
+    <div class="justifybox">
+        The World Wide Web Consortium (W3C) is preparing to pursue 501(c)(3) non-profit status. Today, W3C is pleased to
+        announce elections to its initial Board of Directors (Board) as the governing body of the W3C public-interest
+        non-profit organization. test
+    </div>
+</body>
+
+</html>

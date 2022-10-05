@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text属性</title>
+    <style>
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .indent {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="decoration">
+        <h3>1.text-decoration:文本装饰(下划线、上划线、穿越线)</h3>
+        <!-- a自带decoration:underline属性 -->
+        <a href="www.baidu.com">baidu</a>
+        <span style="text-decoration: underline overline dotted red 3px;">underline</span>
+        <span style="text-decoration: line-through dashed red 3px;">line-through</span>
+        <span style="text-decoration: overline wavy pink 4px;">overline</span>
+        <span style="text-decoration: none;">none</span>
+    </div>
+
+    <div>
+        <h3>2.text-transform:文本大小写转换</h3>
+        <span class="capitalize">test capitalize</span>
+        <span class="uppercase">test uppercase</span>
+        <span class="lowercase">test lowercase</span>
+    </div>
+
+    <div>
+        <h3>3.text-indent:文本首行缩进</h3>
+        <p class="indent">解决的第一个问题就是跨设备的环境一致性。因为 code server
+            始终运行在一个远程的云端环境，因此他的开发环境始终是一致的，不会出现不同平台或者不同设备运行相同的代码而出现各种问题的情况。</p>
+    </div>
+</body>
+
+</html>
