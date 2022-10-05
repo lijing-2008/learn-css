@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 1.px */
+            /* font-size: 50px; */
+
+            /* 2.em:当前字体大小的一个百分比 */
+            /* font-size: 3em; */
+
+            /* 3.百分比%, */
+            font-size: 120%;
+
+            /* 4.rem:相对于根元素的font-size来说 */
+        }
+
+        .box1 {
+            font-size: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>默认字体大小为16px</div>
+    <div class="box">我是div元素,字体大小为3em
+        <div class="box1">我是box的子元素box1,字体大小继承自父元素,为父元素的50%</div>
+    </div>
+
+</body>
+
+</html>
