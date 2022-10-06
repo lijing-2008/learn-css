@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [title] {
+        background-color: skyblue;
+      }
+      [title='java'] {
+        font: 20px/1.5 'Cascadia Mono';
+      }
+      [title$='ss'] {
+        text-decoration: underline wavy red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>属性选择器</h2>
+    <div title="rust">hello rust</div>
+    <div title="java">hello java</div>
+    <div title="css">hello css</div>
+  </body>
+</html>
