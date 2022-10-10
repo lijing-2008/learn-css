@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .box {
-            background-color: #ff8189;
-            text-align: center;
-        }
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          background-color: #ff8189;
+          text-align: center;
+      }
 
-        .box::first-letter {
-            font: 30px 'Cascadia Mono'
-        }
+      .box::first-letter {
+          font: 30px 'Cascadia Mono'
+      }
 
-        .box::first-line {
-            color: #fff;
-        }
+      .box::first-line {
+          color: #fff;
+      }
 
-        .item::before {
-            content: '我是box1::before中的元素';
-            color: deepskyblue;
-        }
+      .item::before {
+          content: '我是box1::before中的元素';
+          color: deepskyblue;
+      }
 
-        .item::after {
-            content: '我是box1::after中的元素';
-            color: hotpink;
-        }
+      .item::after {
+          content: '我是box1::after中的元素';
+          color: hotpink;
+      }
 
-        .item1::after {
-            content: url("../assets/images/svip.png");
-            position: relative;
-            left: 10px;
-            top: 10px;
-        }
+      .item1::after {
+          content: url("../assets/images/svip.png");
+          position: relative;
+          left: 10px;
+          top: 10px;
+      }
 
-        .item2::after {
-            content: "abc";
-            display: inline-block;
-            width: 20px;
-            height: 16px;
-            background-color: indianred;
-        }
+      .item2::after {
+          content: "abc";
+          display: inline-block;
+          width: 20px;
+          height: 16px;
+          background-color: indianred;
+      }
 
-        .quote {
-            quotes: "<<<" ">>>";
-        }
+      .quote {
+          quotes: "<<<" ">>>";
+      }
 
-        .quote::before {
-            content: open-quote;
-        }
+      .quote::before {
+          content: open-quote;
+      }
 
-        .quote::after {
-            content: close-quote;
-        }
-    </style>
+      .quote::after {
+          content: close-quote;
+      }
+	</style>
 </head>
 <body>
 <div class="box">Vscode轻量级的工具 跟Notepad++有的一比 不过个人更喜欢Notepad++ Visual Studio Code里有一个主打功能 Node.js,Notepad++似乎不擅长 还有就是
-    VSC界面更漂亮
+	VSC界面更漂亮
 </div>
 
-<h2>::before 和 ::after 一般用于添加元素前后图标或其他小东西</h2>
+<h2>::before 和 ::after 一般用于添加元素前后图标或其他小东西,默认添加的是行内级元素</h2>
 <div class="box1 item">-box1-</div>
 <div class="item1">vip</div>
 <div class="item2">test div</div>

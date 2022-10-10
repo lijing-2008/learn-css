@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .block {
+          background-color: red;
+          width: 70%;
+          height: 30px;
+          text-align: center;
+          cursor: pointer;
+      }
+
+      .inline {
+          background-color: hotpink;
+          width: 100px;
+          height: 30px;
+      }
+
+      img {
+          width: 50px;
+      }
+
+      input {
+          height: 30px;
+      }
+	</style>
+</head>
+<body>
+<div class="block">I am a div</div>
+<!--行内非替换元素不可以设置宽高-->
+<span class="inline">I am a span</span>
+<!--行内替换元素：和其它行内元素在同一行，可以设置宽和高-->
+<img src="../assets/images/coder.png">
+<input type="text">
+</body>
+</html>

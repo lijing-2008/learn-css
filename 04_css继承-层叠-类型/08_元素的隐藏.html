@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          display: none;
+      }
+
+      .content {
+          /*默认为visible*/
+          visibility: hidden;
+      }
+
+      .box1 {
+          /*这个写法不推荐*/
+          /*color: #ff000000;*/
+          /*一般用这个写法*/
+          color: rgba(255, 0, 0, .1);
+          background-color: rgba(0, 0, 0, 0);
+      }
+
+      .box2 {
+          opacity: 0.5;
+      }
+	</style>
+</head>
+<body>
+<h3>1.display</h3>
+<div class="box">我是div元素</div>
+<div>hello</div>
+
+<h3>2.visibility</h3>
+<div class="content">hahaha</div>
+<div>world</div>
+
+<h3>3.rgba,alpha不会影响子元素</h3>
+<div class="box1">我是box1</div>
+
+<h3>4.opacity设置透明度，并且会携带所有的子元素都有一定的透明度</h3>
+<div class="box2">我是box2
+	<img src="../assets/images/coder.png"></div>
+</body>
+</html>
