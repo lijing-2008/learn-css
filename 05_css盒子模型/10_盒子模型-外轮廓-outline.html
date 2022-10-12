@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          width: 100px;
+          height: 100px;
+          background-color: #ff8189;
+          border: 10px solid orange;
+          padding: 10px;
+          /*margin: 20px;*/
+          outline: 10px solid lime;
+      }
+
+      /*行内级元素设置margin-top无效*/
+      a {
+          margin-top: 20px;
+          display: inline-block;
+          outline: none;
+      }
+
+      input {
+          outline: none;
+      }
+	</style>
+</head>
+<body>
+<h3>outline不占据空间,常用的是去除a或input元素的外轮廓</h3>
+<div class="box"></div>
+<a href="#">baidu</a>
+<input type="text">
+
+</body>
+</html>

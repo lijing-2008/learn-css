@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+      .item {
+          width: 300px;
+          margin: 0 auto;
+      }
+
+      .item .album img {
+          width: 100%;
+          border-radius: 10px;
+      }
+
+      .item .info p {
+          font-size: 15px;
+      }
+
+      .item .info .author {
+          font-size: 12px;
+          color: #888;
+      }
+
+      .item .info .desc {
+          /*显示一行*/
+          /*white-space: nowrap;*/
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+      }
+	</style>
+
+</head>
+<body>
+
+<div class="item">
+	<div class="album">
+		<img src="../assets/images/code.webp" alt="code">
+	</div>
+	<div class="info">
+		<p class="desc">计算机专业应该怎么学习编程计算机专业应该怎么学习编程计算机专业应该怎么学习编程计算机专业应该怎么学习编程？老程序员的良心建议，如果重来一遍我会这么学！</p>
+		<div class="author">
+			<span class="nickname">海贼王是软件工程师</span>
+			<span class="time">8-18</span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

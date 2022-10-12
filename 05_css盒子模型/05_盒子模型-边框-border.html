@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          width: 100px;
+          height: 100px;
+          background-color: #646464;
+          display: inline-block;
+          border-width: 10px 20px 30px 40px;
+          border-color: #ff8189 #ff0000 pink peru;
+          border-style: solid dashed ridge groove;
+      }
+
+      .box1 {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          /*总体简写，顺序可以调换*/
+          border: 2px solid #ff0000;
+      }
+
+      .box2 {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          /*总体简写，顺序可以调换*/
+          border: 2px solid #ff0000;
+          /*border-radius: 5px;*/
+          border-radius: 10px 60%;
+      }
+
+	</style>
+</head>
+<body>
+<h3>border具备宽度width，样式style，颜色color，都有四个方向</h3>
+<div class="box">我是box</div>
+<div class="box1">我是box1</div>
+<h3>border圆角设置</h3>
+<div class="box2">box2</div>
+</body>
+</html>

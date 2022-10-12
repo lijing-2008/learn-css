@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          height: 50px;
+          background-color: lime;
+          margin-bottom: 50px;
+      }
+
+      .box1 {
+          height: 50px;
+          background-color: #ff8189;
+          margin-top: 10px;
+      }
+	</style>
+</head>
+<body>
+<h3>垂直方向上相邻的两个margin(top-bottom)有可能会合并为1个margin，这种现象叫做collapse，即折叠</h3>
+<h3>水平方向上的margin永远不会折叠</h3>
+<h3>collapse后最终值的计算规则：两个值进行比较，取最大的值</h3>
+<div class="box"></div>
+<div class="box1"></div>
+</body>
+</html>

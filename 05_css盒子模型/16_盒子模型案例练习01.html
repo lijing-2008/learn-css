@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+      .btn {
+
+          display: inline-block;
+          width: 75px;
+          height: 25px;
+          text-align: center;
+          line-height: 25px;
+          border-radius: 13px;
+      }
+
+      .new {
+          background-color: #e1251b;
+          color: white;
+      }
+
+      .vip {
+          background-color: #363634;
+          color: #e5d790;
+      }
+
+      .btn:hover {
+          background-color: orange;
+      }
+
+      .item {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 234px;
+          height: 300px;
+          padding: 20px 10px;
+          margin-left: 20px;
+          text-align: center;
+
+
+          background-color: white;
+
+      }
+
+      .item:hover {
+          box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
+      }
+
+      .item img {
+          width: 160px;
+          height: 160px;
+      }
+
+      .item .desc {
+          color: #7b7a7a;
+          margin-top: 10px;
+
+          /*单行文本不换行*/
+          white-space: nowrap;
+          overflow: hidden;
+          /*文本超出部分省略号*/
+          text-overflow: ellipsis;
+      }
+
+      .item .price {
+          margin-top: 10px;
+      }
+
+      .item .new-price {
+          color: red;
+      }
+
+      .item .old-price {
+          text-decoration: line-through;
+          color: #7b7a7a;
+      }
+	</style>
+</head>
+<body>
+<h3>京东</h3>
+<a class="btn new" href="http://xinren.jd.com/?channel=99#/home">新人福利</a>
+<a class="btn vip" href="http://xinren.jd.com/?channel=99#/home">PLUS会员</a>
+<h3>小米</h3>
+<a class="item" href="http://www.mi.com">
+	<div>
+		<img src="../assets/images/xiaomi01.webp">
+	</div>
+	<h3>Xiaomi MIX Fold 2</h3>
+	<p class="desc">超轻薄折叠机身设计，小米自研微水滴形态转轴</p>
+	<div class="price">
+		<span class="new-price">8999元起</span>
+		<span class="old-price">2399</span>
+	</div>
+
+</a>
+
+</body>
+</html>
