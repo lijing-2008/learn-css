@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          background-color: lime;
+      }
+
+      strong {
+          /*position: fixed;*/
+          width: 100px;
+          background-color: #ff8189;
+      }
+
+      .box1 {
+          width: 800px;
+          height: 300px;
+          background-color: #ff8189;
+          position: relative;
+      }
+
+      .container {
+          width: 200px;
+          height: 100px;
+          background-color: yellowgreen;
+          position: absolute;
+
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          top: 0;
+          bottom: 0;
+      }
+	</style>
+</head>
+<body>
+
+<div class="box">
+	<strong>I am a strong element.</strong>
+</div>
+<br>
+<div class="box1">
+	利用绝对定位实现水平垂直居中
+	<br>
+	red box width = green box width + left + right + margin-left + margin-right
+	<br>
+	red box height = green box height + top + bottom + margin-top + margin-bottom
+
+	<div class="container">
+		我是一个居中的绝对定位元素
+	</div>
+</div>
+</body>
+</html>

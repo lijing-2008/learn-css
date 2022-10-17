@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      img {
+          width: 150px;
+          border-radius: 10px;
+      }
+
+      .container {
+          width: 600px;
+          height: 300px;
+          background-color: lime;
+          position: relative;
+      }
+
+      .box {
+          width: 400px;
+          height: 200px;
+          background-color: #ff8189;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+      }
+
+      strong {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+      }
+	</style>
+</head>
+<body>
+<h3>absolute相对于最邻近的定位祖先元素,如果没有找到的话参照对象是视口</h3>
+<div class="container">
+	我是container中的一行文字
+	<div class="box">
+		<span>span</span>
+		<strong>strong</strong>
+		<img src="../assets/images/coder.png" alt="coder">
+		<div>div</div>
+	</div>
+</div>
+</body>
+</html>
