@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      span {
+          background-color: #ff8189;
+          float: left;
+          /*margin-right: 5px;*/
+      }
+	</style>
+</head>
+<body>
+<h3>将多个行内级元素中间的空格去除的方法</h3>
+<h4>1.删除换行符(不推荐)</h4>
+<h4>2.将父级元素font-size设置为0，但是需要子级元素设置回来</h4>
+<h4>3.通过子元素统一向一个方向浮动即可(兼容性最好)</h4>
+<h4>4.flex布局(未来的趋势)</h4>
+<div class="box">
+	<span>span1</span>
+	<span>span2</span>
+	<span>span3</span>
+</div>
+</body>
+</html>

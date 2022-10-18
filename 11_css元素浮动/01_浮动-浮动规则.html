@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          box-sizing: border-box;
+          width: 200px;
+          height: 200px;
+          background-color: orange;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      .item1 {
+          background-color: red;
+          float: left;
+      }
+
+      .item2 {
+          background-color: lime;
+          float: right;
+      }
+
+      .item {
+          width: 100px;
+          height: 100px;
+          background-color: #ff8189;
+      }
+
+      .box1 {
+          background-color: lime;
+          float: left;
+          margin-left: 20px;
+      }
+
+      .box2 {
+          background-color: red;
+          float: left;
+      }
+
+      .box3 {
+          /*float: left;*/
+
+      }
+
+      .box-3 {
+          width: 500px;
+          background-color: #ff8189;
+      }
+
+      .box-3 img {
+          width: 150px;
+          float: left;
+      }
+	</style>
+</head>
+<body>
+<h1>规则一</h1>
+<h3>元素一旦浮动后，脱离标准流，朝着向左或向右方向移动，直到自己的边界紧贴着包含块(一般是父元素)或者其他浮动元素的边界为止,浮动元素的边界不能超出包含块的左右边界</h3>
+<div class="box">
+	<div class="item1">1</div>
+	<div class="item2">2</div>
+</div>
+<h1>规则二</h1>
+<h3>浮动元素不能层叠</h3>
+<div class="item box1">box1</div>
+<div class="item box2">box2</div>
+<div class="item box3">box3</div>
+
+<br>
+<h1>规则三</h1>
+<h3>浮动元素不能与行内级内容层叠，行内级内容会被浮动元素推出,行内级元素、inline-block元素浮动后，其顶部将与所在行的顶部对齐</h3>
+<div class="box-3">
+	<img src="../assets/images/coder.png" alt="code">
+	这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+	<img src="../assets/images/coder.png" alt="code">
+	这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+</div>
+
+
+<h1>规则三</h1>
+<h3>浮动元素不能与行内级内容层叠，行内级内容会被浮动元素推出</h3>
+</body>
+</html>
