@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .container {
+          width: 500px;
+          height: 500px;
+          background-color: #ff8189;
+          display: flex;
+          flex-wrap: wrap;
+          /*flex-wrap: wrap-reverse;*/
+      }
+
+      .item {
+          width: 120px;
+          height: 120px;
+          background-color: #9e9c9c;
+      }
+
+      .item1 {
+          background-color: red;
+      }
+
+      .item2 {
+          background-color: lime;
+      }
+
+      .item3 {
+          background-color: peru;
+      }
+
+      .item4 {
+          background-color: skyblue;
+      }
+	</style>
+</head>
+<body>
+<h3>flex-wrap默认为no-wrap，不会自动换行,会压缩</h3>
+<div class="container">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+</div>
+</body>
+</html>

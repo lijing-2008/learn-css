@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .container {
+          width: 500px;
+          height: 500px;
+          background-color: #ff8189;
+          display: flex;
+      }
+
+      .item {
+          /*width: 120px;*/
+          height: 120px;
+          background-color: #9e9c9c;
+          margin-bottom: 10px;
+          flex-basis: 120px;
+      }
+
+      .item1 {
+          background-color: red;
+          flex-shrink: 1;
+          min-width: 100px;
+
+      }
+
+      .item2 {
+          background-color: lime;
+          flex-shrink: 1;
+      }
+
+      .item3 {
+          background-color: peru;
+      }
+
+	</style>
+</head>
+<body>
+<h3>有单词显示不全的时候，设置flex-basis会自动拉伸显示完整单词，如果是中文没什么影响</h3>
+<h3>如果basis和width都设置了，以width为主</h3>
+
+<div class="container">
+	<div class="item item1">1</div>
+	<div class="item item2">我是coderli_hahaha_hehehehehehehe</div>
+	<div class="item item3">3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .container {
+          width: 500px;
+          height: 500px;
+          background-color: #ff8189;
+          display: flex;
+          flex-flow: wrap;
+          /*flex-start:默认，让元素和main-left对齐*/
+          /*flex-end:让元素和main-end对齐*/
+          /*center:居中对齐*/
+          /*space-between:两端各放一个元素，其他多余的元素一定要空间等分*/
+          /*space-evenly:两端也有空隙，所有空隙都相等*/
+          /*space-around:两端的空隙是中间空隙的一半*/
+          justify-content: space-between;
+          /*padding: 0 10px;*/
+          /*box-sizing: border-box;*/
+      }
+
+      .item {
+          width: 120px;
+          height: 120px;
+          background-color: #9e9c9c;
+      }
+
+      .item1 {
+          background-color: red;
+      }
+
+      .item2 {
+          background-color: lime;
+      }
+
+      .item3 {
+          background-color: peru;
+      }
+
+      .item4 {
+          background-color: skyblue;
+      }
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+	<div class="item item4">4</div>
+	<div class="item item5">5</div>
+	<div class="item item5">5</div>
+	<div class="item item5">5</div>
+</div>
+</body>
+</html>

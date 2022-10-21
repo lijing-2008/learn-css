@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .container {
+          width: 500px;
+          height: 500px;
+          background-color: #ff8189;
+          display: flex;
+          flex-flow: wrap;
+          align-items: center;
+      }
+
+      .item {
+          width: 120px;
+          height: 120px;
+          background-color: #9e9c9c;
+          margin-bottom: 10px;
+      }
+
+      .item1 {
+          height: 80px;
+          background-color: red;
+          /*font-size: 30px;*/
+          order: 5;
+      }
+
+      .item2 {
+          /*height: 100px;*/
+          background-color: lime;
+          /*font-size: 40px;*/
+          order: -2;
+      }
+
+      .item3 {
+          /*height: 50px;*/
+          background-color: peru;
+      }
+
+      .item4 {
+          background-color: skyblue;
+      }
+	</style>
+</head>
+<body>
+<h3>order默认为0，可设置正整数、负整数和0，值越小越排在前</h3>
+<div class="container">
+	<div class="item item1">1</div>
+	<div class="item item2">2</div>
+	<div class="item item3">3</div>
+</div>
+</body>
+</html>
