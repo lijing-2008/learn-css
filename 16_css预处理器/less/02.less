@@ -1,0 +1,34 @@
+// less code - variables
+@themeColor: #f3c258;
+@fontThemeColor: #f18189;
+@smallFontSize: 12px;
+@normalFontSize: 14px;
+@bigFontSize: 18px;
+@lxFont: "LXGWWenKaiMono-Bold";
+
+.container {
+  background-color: @themeColor;
+
+  .box {
+    color: @fontThemeColor;
+  }
+
+  .pel {
+    font-family: @lxFont;
+  }
+
+  p {
+    a.link {
+      color: @fontThemeColor;
+
+      &:hover {
+        color: red;
+      }
+
+      &::after {
+        content: ' hello';
+      }
+    }
+  }
+
+}

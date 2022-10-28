@@ -7,11 +7,20 @@
       .box {
           background-color: orange;
       }
+
+      .box .small {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          background-color: #ff8189;
+      }
 	</style>
 </head>
 <body>
+<h3>每一行的内容可以看成由一个行盒line box包裹</h3>
+<h3>line-boxes一定会想办法包裹住当前行中的所有内容</h3>
 <div class="box">
-	我是div元素.
+	我是div元素. <span class="small"></span>
 	Docker 是一个用于开发、运行和发布的应用的开发平台。Docker 能够将应用程序与基础架构分离，通过利用 Docker 快速交付、测试和部署代码的方法，显着减少编写代码和在生产中运行之间的延迟。
 	首先分离的作用，Docker 是一种容器技术，一方面 Docker
 	可以将程序本身同程序的基础架构分离，如同类与实例之间的关系，只要创建好“类”，就能到处去使用“实例”。另一方面，容器就类似于一个封闭的环境，容器之间也是相互分离的，互不干扰的，保证了环境的统一和安全，就不会出现“测试环境没问题，到了生产环境就报错”这样尴尬的情况。

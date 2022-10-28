@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .container {
+          height: 100px;
+          background-color: orange;
+      }
+
+      .container .box {
+          height: 50px;
+          display: inline-block;
+          background-color: #ff8189;
+          /*注意：margin-top设置百分比相对的是（包含块）父元素盒子的宽度来说的*/
+          /*margin-top: 50%;*/
+          /*使用相对定位先移动到父盒子中线*/
+          position: relative;
+          top: 50%;
+          /*向上移动自身盒子的50%*/
+          transform: translate(0, -50%);
+      }
+	</style>
 </head>
 <body>
-$END$
+<div class="container">
+	<div class="box">coder</div>
+</div>
 </body>
 </html>

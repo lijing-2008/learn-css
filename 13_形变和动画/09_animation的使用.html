@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          width: 200px;
+          height: 100px;
+          background-color: orange;
+
+          /*animation-delay: 1s;*/
+          /*animation-name: li;*/
+          /*animation-duration: 3s;*/
+          /*animation-timing-function: ease-in-out;*/
+          /*动画执行次数*/
+          /*animation-iteration-count: infinite;*/
+          /*animation-direction: reverse;*/
+          /*animation-fill-mode: forwards;*/
+          /*一般配合js使用*/
+          /*animation-play-state: running;*/
+
+          animation: li 3s linear;
+      }
+
+      @keyframes li {
+          0% {
+              transform: translate(0, 0) scale(0.5);
+          }
+          33% {
+              transform: translate(0, 200px) scale(1);
+          }
+          66% {
+              transform: translate(400px, 200px) scale(1.2);
+          }
+          100% {
+              transform: translate(400px, 0) scale(0.5);
+          }
+      }
+	</style>
 </head>
 <body>
-$END$
+<div class="box"></div>
 </body>
 </html>

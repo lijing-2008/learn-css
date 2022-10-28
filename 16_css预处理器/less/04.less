@@ -1,0 +1,39 @@
+// 1.继承
+//.box_border {
+//  border: 5px solid #f00;
+//}
+//
+//.box {
+//  width: 100px;
+//  background-color: orange;
+//  //.box_border();
+//  &:extend(.box_border);
+//}
+
+// 2.内置函数
+//.box {
+//  //color: color(purple);
+//  color: #FF6F91;
+//  width: convert(100px, "in");
+//  font-size: floor(18.5px);
+//  background-color: #845EC2;
+//}
+
+.box_mixin {
+  color: #f3c258;
+}
+
+// 3.作用域
+@main-color: #845ec2;
+.box {
+  @main-color: #f00;
+
+  span {
+    color: @main-color;
+    .box_mixin();
+  }
+}
+
+// 4.comment
+// 单行注释
+/* 多行注释 */

@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          position: relative;
+          width: 200px;
+          height: 100px;
+          background-color: orange;
+          color: #333333;
+
+          /*transition-property: transform;*/
+          /*transition-duration: 1s;*/
+          /*transition-timing-function: ease-in;*/
+          /*transition-delay: 1s;*/
+          transition: all .2s ease-in 0s;
+      }
+
+      .box:hover {
+          cursor: pointer;
+          transform: translate(50px, 50px);
+          background-color: #ff8189;
+          color: red;
+      }
+
+	</style>
 </head>
 <body>
-$END$
+<div class="box">hello</div>
 </body>
 </html>

@@ -1,0 +1,38 @@
+.box {
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000 + #00ff00;
+}
+
+.nowrap_ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+//混入可以传递参数
+.box_border(@borderWidth:5px, @borderColor:purple) {
+  border: @borderWidth solid @borderColor;
+}
+
+//混入和映射结合使用，弥补less中不能自定义函数的缺陷
+.box_size {
+  width: 200px;
+  height: 100px;
+}
+
+.box1 {
+  width: .box_size()[width];
+  background-color: #f3c258;
+  .nowrap_ellipsis();
+  .box_border();
+
+}
+
+.box2 {
+  width: 150px;
+  background-color: #f18189;
+  .nowrap_ellipsis();
+  .box_border(3px, red)
+}

@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+      .box {
+          width: 100px;
+          height: 100px;
+          background-color: orange;
+      }
+	</style>
 </head>
 <body>
-$END$
+<h3>用来做自定义数据</h3>
+<div class="box" data-name="macus" data-age="18" data-height="1.8"></div>
+
+<script>
+    const box = document.querySelector(".box")
+    console.log(box.dataset)
+</script>
 </body>
 </html>
